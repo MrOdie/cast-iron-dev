@@ -1,3 +1,7 @@
+// import React Componenets
+import Navbar from "@/components/globals/navigation/navigation";
+
+// import Styles
 import sassy from "./layout.module.scss";
 import "../sass/index.scss";
 
@@ -9,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={sassy.body}>{children}</body>
+      <body className={sassy.body}>
+        <Navbar></Navbar>
+        <main className={sassy.main}>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

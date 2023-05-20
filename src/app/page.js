@@ -3,7 +3,7 @@ import Todo from "@/components/todo/todo";
 
 const Home = () => {
     return (
-        <main>
+        <section>
             <div>
                 <h1>This is the main content.</h1>
             </div>
@@ -12,7 +12,7 @@ const Home = () => {
                 <Comp></Comp>
                 <Todo></Todo>
             </div>
-        </main>
+        </section>
     )
 }
 
