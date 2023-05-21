@@ -1,0 +1,28 @@
+@use '../sass/misc/colors.scss' as *;
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+
+    .article {
+        &_base, &_alt {
+            grid-column: 2/3;
+            color: green;
+        }
+
+        &_base {
+            margin: 0 auto;
+        }
+
+        &_alt {
+            padding: 1.5rem;
+            margin: 2.5rem;
+            display: flex;
+            justify-content: center;
+            background-color: azure;
+            border: .125rem solid $text;
+            border-radius: .25rem;
+        }
+
+    }
+}

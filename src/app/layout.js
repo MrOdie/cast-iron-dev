@@ -5,6 +5,9 @@ import Navbar from "@/components/globals/navigation/navigation";
 import sassy from "./layout.module.scss";
 import "../sass/index.scss";
 
+// import font
+import "../fonts/typography.css";
+
 export const metadata = {
   title: 'React Playground',
   description: 'Knocking the rust off of my front end experience.',

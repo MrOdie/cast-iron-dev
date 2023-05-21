@@ -1,0 +1,28 @@
+@use "sass:map";
+
+$odiePallet: (
+  "color1": #3c3744,
+  "color2": #6d98ba,
+  "color3": #f4e4ba,
+  "color4": #c46d5e,
+  "color5": #a44200,
+);
+
+// $odieRGB: (
+//   "color1": rgb(15, 94, 156),
+//   "color2": rgb(35, 137, 218),
+//   "color3": rgb(28, 163, 236),
+//   "color4": rgb(90, 188, 216),
+//   "color5": rgb(116, 204, 244),
+// );
+
+$white-hover: #cfcfcf;
+$smoke: #f5f5f5;
+$white: #eee;
+$alt-white: #fefefe;
+$text: #333;
+
+.backgroundColorMain,
+.backgroundColorAbout {
+  background-color: $white;
+}
