@@ -7,13 +7,13 @@ import sassy from "./page.module.scss";
 const Home = () => {
     return (
         <section className={sassy.section}>
-            <div className={sassy.article_base}>
+            <article className={sassy.article_base}>
                 <h1>This is the main content.</h1>
-            </div>
+            </article>
 
-            <div className={sassy.article_alt}>
+            <article className={sassy.article_alt}>
                 <Todo></Todo>
-            </div>
+            </article>
         </section>
     )
 }
