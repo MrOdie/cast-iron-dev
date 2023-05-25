@@ -31,18 +31,15 @@ const Todo = () => {
             type="text"
             onChange={(e) => setInput(e.target.value)}
           />
-          {input === "" ? (
-            ""
-          ) : (
-            <button className={sassy.todoSubmit}>Submit</button>
-          )}
+          <button disabled={!input} className={sassy.todoSubmit}>Submit</button>
         </form>
       </article>
       <article className={sassy.todoList}>
         {todos.map((todo, index) => {
           return (
             <div className={sassy.todo} key={index}>
-              {todo}
+              <p>{todo}</p>
+              <button className={sassy.delete}>X</button>
             </div>
           );
         })}

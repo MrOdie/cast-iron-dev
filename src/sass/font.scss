@@ -29,7 +29,7 @@
   font-family: "Montserrat Regular", Georgia;
 }
 %p {
-  font: 112.5%/1.45em "Montserrat Regular", Georgia;
+  font: 112.5%/1.45rem "Montserrat Regular", Georgia;
 }
 
 .h1,
@@ -69,11 +69,21 @@ a {
 p,
 li,
 a,
+input,
+span,
 label,
 blockquote,
+button,
 figure,
 figcaption {
   @extend %p;
+}
+
+div,
+article,
+section,
+nav {
+  font-family: "Montserrat Regular", Georgia;
 }
 
 .col > h1:first-child,
