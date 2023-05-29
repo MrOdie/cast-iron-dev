@@ -19,8 +19,8 @@
             margin: 2.5rem;
             display: flex;
             justify-content: center;
-            background-color: azure;
-            border: .125rem solid $text;
+            background-color: map-get($odiePallet, color2);
+            border: .125rem solid map-get($odiePallet, color1);
             border-radius: .25rem;
         }
 

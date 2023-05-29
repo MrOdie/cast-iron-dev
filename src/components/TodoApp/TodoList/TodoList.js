@@ -1,26 +1,39 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sassy from "./todo.module.scss";
 
 const Todo = () => {
-  const dummyTodos = ["one", "two", "three"];
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState([]);
 
   const updateTodoList = (e) => {
+    // prevent page reload
     e.preventDefault();
 
+    // bit of a null check
     if (e.target.todo === "") return;
 
-    todos.push(input);
-    setTodos(todos);
+    // push new todo to array of todos
+    const updatedTodos = [...todos, input];
 
+    // update state of todos
+    setTodos(updatedTodos);
+
+    // reset todos
     setInput("");
   };
 
+  const deleteTodo = (todo, i) => {
+    if (todos.indexOf(todo) === -1) return;
+
+    const updatedTodos = todos.filter((_, index) => index != i);
+    setTodos(updatedTodos);
+  }
+
   return (
     <section className={sassy.todoApp}>
+      <h3 className="h1 text-white pad-bottom-1 dark-text-shadow">Todo Application</h3>
       <article>
         <form className={sassy.todoForm} onSubmit={updateTodoList}>
           <input
@@ -39,7 +52,7 @@ const Todo = () => {
           return (
             <div className={sassy.todo} key={index}>
               <p>{todo}</p>
-              <button className={sassy.delete}>X</button>
+              <button onClick={() => deleteTodo(todo, index)} className={sassy.delete}>X</button>
             </div>
           );
         })}

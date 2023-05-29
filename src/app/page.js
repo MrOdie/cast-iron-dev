@@ -1,5 +1,5 @@
 import Comp from "@/components/comp/comp";
-import Todo from "@/components/todo/todo";
+import Todo from "@/components/TodoApp/TodoList/TodoList";
 
 // Styles
 import sassy from "./page.module.scss";

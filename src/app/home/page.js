@@ -1,5 +1,5 @@
 import Comp from "@/components/comp/comp";
-import Todo from "@/components/todo/todo"
+import Todo from "@/components/TodoApp/TodoList/TodoList"
 import { Fragment } from "react";
 import sassy from "./home.module.scss";
 
