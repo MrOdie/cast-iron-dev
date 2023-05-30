@@ -1,5 +1,4 @@
-import Comp from "@/components/comp/comp";
-import Todo from "@/components/TodoApp/TodoList/TodoList";
+import TodoApp from "@/components/Todo/TodoApp/TodoApp";
 
 // Styles
 import sassy from "./page.module.scss";
@@ -12,7 +11,7 @@ const Home = () => {
             </article>
 
             <article className={sassy.article_alt}>
-                <Todo></Todo>
+                <TodoApp></TodoApp>
             </article>
         </section>
     )

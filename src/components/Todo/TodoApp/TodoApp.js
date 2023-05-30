@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import sassy from "./todo.module.scss";
 
-const Todo = () => {
+// Styles
+import sassy from "./TodoApp.module.scss";
+
+const TodoApp = () => {
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState([]);
 
@@ -61,4 +63,4 @@ const Todo = () => {
   );
 };
 
-export default Todo;
+export default TodoApp;
