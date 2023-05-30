@@ -1,0 +1,12 @@
+@use "../sass/misc/colors.scss" as *;
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+    background-color: map-get($odiePallet, color5);
+
+    .main {
+        grid-column: 2;
+    }
+}

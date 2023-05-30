@@ -1,0 +1,9 @@
+@use './normalize.scss' as *;
+@use './reset.scss' as *;
+@use './font.scss' as *;
+@use './misc/misc.scss' as *;
+@use './mixins/mixins.scss' as *;
+
+html {
+    font-size: 16px;
+}
