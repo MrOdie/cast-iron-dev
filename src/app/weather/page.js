@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Weather App | React Playground'
+}
+
 const WeatherApp = () => {
   return (
     <>
