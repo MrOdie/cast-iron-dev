@@ -9,7 +9,7 @@ import "../sass/index.scss";
 import "../fonts/typography.css";
 
 export const metadata = {
-  title: 'React Playground',
+  title: 'Cast Iron Dev',
   description: 'Knocking the rust off of my front end experience.',
 }
 
