@@ -3,7 +3,7 @@ import sassy from "./navigation.module.scss";
 
 const Navbar = () => {
     return (
-        <section className={sassy.navbar}>
+        <section className={`${sassy.navbar} margin-none`}>
             <nav className={sassy.nav}>
                 <Link href="/">Home</Link>
                 <Link href="/todo">Todo</Link>
