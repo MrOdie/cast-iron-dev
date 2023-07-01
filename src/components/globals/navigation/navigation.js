@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
 import sassy from "./navigation.module.scss";
+import logo from "../../../img/logo.svg";
 
 const Navbar = () => {
 
@@ -44,7 +46,18 @@ const Navbar = () => {
         }
     };
     return (
-        <header ref={header} className={sassy.mainHeader} data-header>
+        <header ref={header} className={sassy.header}>
+            <div className={sassy.logoContainer}>
+                <Link className={sassy.logoLink} href="/">
+                    <Image
+                        className={sassy.logo}
+                        src={logo}
+                        alt="Cast Iron Dev"
+                        rel="preload"
+                        priority={true}
+                    />
+                </Link>
+            </div>
             <input
                 type="checkbox"
                 id="menuBtn"
