@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Weather App | React Playground'
+  title: 'Weather App | Cast Iron Dev'
 }
 
 const WeatherApp = () => {
