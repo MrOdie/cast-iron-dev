@@ -33,6 +33,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.env
-
-# we're ignoring the .env file bc I don't want to deal with inadvertently storing my personal API key
