@@ -1,7 +1,7 @@
-@use './layout/breakpoints.scss' as *;
-@use './layout/colors.scss' as *;
-@use './layout/spacing_classes.scss' as *;
-@use './layout/font.scss' as *;
+@use './layout/breakpoints' as *;
+@use './layout/colors' as *;
+@use './layout/spacing_classes' as *;
+@use './layout/font' as *;
 
 html {
   box-sizing: border-box;

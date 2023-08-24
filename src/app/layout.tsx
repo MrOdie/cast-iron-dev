@@ -1,4 +1,7 @@
 import '@/app/assets/styles/style.scss'
+import Navbar from "@/app/assets/components/navbar";
+import Footer from "@/app/assets/components/footer";
+import {font} from "./font";
 
 export const metadata = {
   title: 'Cast Iron Dev',
@@ -12,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`margin-none ${font.className}`}>
+        <Navbar></Navbar>
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   )
 }

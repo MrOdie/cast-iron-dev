@@ -1,7 +1,6 @@
-import Navigation from "@/app/components/navigation";
 
 export default function Home() {
   return (
-      <Navigation></Navigation>
+    <h1>Hello there</h1>
   )
 }
