@@ -1,4 +1,5 @@
 @use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
 
 .section {
   background-color: map-get($pallet, color1);
@@ -11,18 +12,13 @@
     display: flex;
     flex-flow: row nowrap;
 
-    &_item {
+    .logo {
+      &_image {
 
-      &_link {
-        color: $white;
-        text-decoration: none;
-        padding: 1rem;
-        display: inline-block;
+        @include breakpoints(lg_tablet sm_desktop desktop large really_big) {
+          margin-top: 0.6rem;
+        }
       }
-    }
-
-    &_current {
-      background-color: map-get($pallet, color2);
     }
   }
 }

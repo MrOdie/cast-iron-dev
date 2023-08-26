@@ -1,17 +1,20 @@
 "use client"
 
 import styles from "@/app/assets/styles/modules/nav.module.scss";
-import Link from "next/link";
 import {Fragment, useEffect, useState} from "react";
 import {NavItem} from "@/app/assets/types/navItem";
 import Navigation from "@/app/assets/typescriptObjects/navigationItems";
 import {usePathname} from "next/navigation";
 import Image from "next/image";
-import Logo from "../../../../public/logo.svg";
+import Logo from "../../../../../public/logo.svg";
+import DesktopNav from "@/app/assets/components/navigation/DesktopNav";
+import UseWindowSize from "@/app/assets/utils/UseWindowSize";
+import MobileNav from "@/app/assets/components/navigation/MobileNav";
 
 const nav: NavItem[] = Navigation;
 
 const Navbar = () => {
+    const size = UseWindowSize();
     const currentPathname: string = usePathname();
     const [pathName, setPathName] = useState("");
 
@@ -24,16 +27,13 @@ const Navbar = () => {
             <section className={styles.section}>
                 <nav className={styles.nav}>
                     <div className={styles.logo}>
-                        <Image src={Logo} alt="Cast Iron Developer" />
+                        <Image className={styles.logo_image} src={Logo} alt="Cast Iron Developer" />
                     </div>
-                    {nav.map((item) => {
-                        const isCurrent = pathName === item.href;
-                        return (
-                            <div className={styles.nav_item} key={item.id}>
-                                <Link className={isCurrent ? `${styles.nav_item_link} ${styles.nav_current}` : styles.nav_item_link} href={item.href}>{item.name}</Link>
-                            </div>
-                        )
-                    })}
+                    {
+                        size.width >= 768 ?
+                            <DesktopNav navItems={nav} path={pathName} /> :
+                            <MobileNav navItems={nav} path={pathName} />
+                    }
                 </nav>
             </section>
         </Fragment>
