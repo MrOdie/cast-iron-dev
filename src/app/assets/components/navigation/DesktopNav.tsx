@@ -11,14 +11,16 @@ interface Props {
 const DesktopNav: FunctionComponent<Props> = ({navItems, path}) => {
     return (
         <div className={styles.nav}>
-            {navItems.map((item) => {
-                const isCurrent = path === item.href;
-                return (
-                    <div className={styles.nav_item} key={item.id}>
-                        <Link className={isCurrent ? `${styles.nav_item_link} ${styles.nav_current}` : styles.nav_item_link} href={item.href}>{item.name}</Link>
-                    </div>
-                )
-            })}
+            <ul className={styles.nav_list}>
+                {navItems.map((item) => {
+                    const isCurrent = path === item.href;
+                    return (
+                        <li className={styles.nav_list_item} key={item.id}>
+                            <Link className={isCurrent ? `${styles.nav_list_item_link} ${styles.nav_list_current}` : styles.nav_list_item_link} href={item.href}>{item.name}</Link>
+                        </li>
+                    )
+                })}
+            </ul>
         </div>
     )
 }

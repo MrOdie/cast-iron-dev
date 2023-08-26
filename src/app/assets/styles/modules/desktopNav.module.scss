@@ -5,17 +5,22 @@
   display: flex;
   flex-flow: row nowrap;
 
-  &_item {
+  &_list {
+    display: flex;
+    flew-flow: row nowrap;
+    list-style: none;
+    &_item {
 
-    &_link {
-      color: $white;
-      text-decoration: none;
-      padding: 1rem;
-      display: inline-block;
+      &_link {
+        color: $white;
+        text-decoration: none;
+        padding: 1rem;
+        display: inline-block;
+      }
     }
-  }
 
-  &_current {
-    background-color: map-get($pallet, color2);
+    &_current {
+      background-color: map-get($pallet, color2);
+    }
   }
 }
