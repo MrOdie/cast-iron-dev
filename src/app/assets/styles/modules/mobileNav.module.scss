@@ -4,6 +4,8 @@
 .nav {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
 
   .hamburger {
     &_btn {
@@ -24,7 +26,7 @@
 
     &_icon {
       position: relative;
-      padding: 26px 10px;
+      padding: 10px;
       cursor: pointer;
       z-index: 1;
       display: none;
@@ -59,7 +61,7 @@
       }
     }
 
-    @include breakpoints(large desktop sm_desktop lg_tablet tablet nav mobile) {
+    @include breakpoints(tablet nav mobile) {
 
       &_icon {
         display: block;
@@ -153,7 +155,6 @@
     background-color: map-get($pallet, color2);
   }
 }
-
 
 @keyframes pulse {
   from {

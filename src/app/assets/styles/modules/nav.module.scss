@@ -5,20 +5,28 @@
   background-color: map-get($pallet, color1);
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+
+  @include breakpoints(tablet mobile nav) {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  @include breakpoints(lg_tablet sm_desktop desktop large really_big) {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
 
   .nav {
     grid-column: 2;
     display: flex;
     flex-flow: row nowrap;
+    @include breakpoints(tablet mobile nav) {
+      justify-content: space-between;
+    }
 
     .logo {
-      &_image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        @include breakpoints(lg_tablet sm_desktop desktop large really_big) {
-          margin-top: 0.6rem;
-        }
-      }
     }
   }
 }

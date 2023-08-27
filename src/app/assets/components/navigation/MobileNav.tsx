@@ -21,9 +21,9 @@ const MobileNav: FunctionComponent<Props> = ({navItems, path}) => {
                 className={styles.hamburger_btn}
                 onClick={() => setIsOpen(!isOpen)}
             />
-            <label htmlFor="hamburger" className={styles.hamburger_icon}>
+            <label htmlFor="hamburger" className={`${styles.hamburger_icon} hidden-desktop`}>
                 <p className="hidden">Menu Button</p>
-                <span className={styles.hamburger_icon_line}></span>
+                <span className={`${styles.hamburger_icon_line} hidden-desktop`}></span>
             </label>
 
             {

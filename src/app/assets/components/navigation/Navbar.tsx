@@ -8,19 +8,19 @@ import {usePathname} from "next/navigation";
 import Image from "next/image";
 import Logo from "../../../../../public/logo.svg";
 import DesktopNav from "@/app/assets/components/navigation/DesktopNav";
-import UseWindowSize from "@/app/assets/utils/UseWindowSize";
 import MobileNav from "@/app/assets/components/navigation/MobileNav";
+import useWindowDimensions from "@/app/assets/utils/useWindowDimensions";
 
 const nav: NavItem[] = Navigation;
 
 const Navbar = () => {
-    const size = UseWindowSize();
+    const { width, height } = useWindowDimensions();
     const currentPathname: string = usePathname();
     const [pathName, setPathName] = useState("");
 
     useEffect(() => {
         setPathName(currentPathname);
-    });
+    }, []);
 
     return (
         <Fragment>
@@ -29,11 +29,9 @@ const Navbar = () => {
                     <div className={styles.logo}>
                         <Image className={styles.logo_image} src={Logo} alt="Cast Iron Developer" />
                     </div>
-                    {
-                        size.width >= 768 ?
-                            <DesktopNav navItems={nav} path={pathName} /> :
-                            <MobileNav navItems={nav} path={pathName} />
-                    }
+                    { width && width >= 769 ? <DesktopNav navItems={nav} path={pathName} /> : null}
+                    { width && width <= 768 ? <MobileNav navItems={nav} path={pathName} /> : null}
+
                 </nav>
             </section>
         </Fragment>

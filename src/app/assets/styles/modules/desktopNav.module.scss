@@ -7,10 +7,15 @@
 
   &_list {
     display: flex;
-    flew-flow: row nowrap;
+    flex-flow: row nowrap;
     list-style: none;
+    padding: 0;
+    margin: 0;
     &_item {
 
+      &:hover, &:focus, &:active {
+        cursor: pointer;
+      }
       &_link {
         color: $white;
         text-decoration: none;

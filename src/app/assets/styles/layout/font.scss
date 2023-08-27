@@ -136,6 +136,12 @@ main {
   display: none;
 }
 
+@include breakpoints(large desktop sm_desktop lg_tablet) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
 .link {
   text-decoration: none;
   color: map-get($pallet, "color5");
