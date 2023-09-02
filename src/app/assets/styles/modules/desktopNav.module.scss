@@ -2,30 +2,48 @@
 @use '../layout/breakpoints' as *;
 
 .nav {
+  grid-column: 2;
   display: flex;
   flex-flow: row nowrap;
+  @include breakpoints(tablet mobile nav) {
+    justify-content: space-between;
+  }
 
-  &_list {
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inner {
     display: flex;
     flex-flow: row nowrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    &_item {
 
-      &:hover, &:focus, &:active {
-        cursor: pointer;
-      }
-      &_link {
-        color: $white;
-        text-decoration: none;
-        padding: 1rem;
-        display: inline-block;
-      }
-    }
+    &__list {
+      display: flex;
+      flex-flow: row nowrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-    &_current {
-      background-color: map-get($pallet, color2);
+      &__item {
+
+        &:hover, &:focus, &:active {
+          cursor: pointer;
+        }
+
+        &__link {
+          color: $white;
+          text-decoration: none;
+          padding: .5rem;
+          display: inline-block;
+        }
+      }
+
+      &__current {
+        background-color: map-get($pallet, color2);
+      }
     }
   }
+
 }
