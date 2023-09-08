@@ -1,0 +1,5 @@
+@use '../layout/colors' as *;
+
+.logo {
+  filter: drop-shadow(1px 1px 0px map-get($pallet, color2));
+}
