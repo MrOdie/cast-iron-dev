@@ -2,7 +2,7 @@ import '@/app/assets/styles/style.scss'
 import Navbar from "@/app/assets/components/navigation/Navbar";
 import Footer from "@/app/assets/components/Footer";
 import {font} from "./font";
-import Loading from "@/app/loading";
+import styles from "@/app/assets/styles/modules/rootLayout.module.scss";
 
 export const metadata = {
   title: 'Cast Iron Dev',
@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`margin-none ${font.className}`}>
         <Navbar></Navbar>
-        {children}
+        <section className={styles.root__section}>
+          {children}
+        </section>
         <Footer></Footer>
       </body>
     </html>

@@ -1,0 +1,6 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.home {
+  grid-column-start: 2;
+}

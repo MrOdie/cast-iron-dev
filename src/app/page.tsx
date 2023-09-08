@@ -1,6 +1,12 @@
+import styles from "@/app/assets/styles/modules/home.module.scss";
 
-export default function Home() {
-  return (
-    <h1>Hello there</h1>
-  )
+
+const Home = () => {
+    return (
+        <div className={styles.home}>
+            <h1>Home</h1>
+        </div>
+    )
 }
+
+export default Home;

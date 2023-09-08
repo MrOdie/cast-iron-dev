@@ -5,7 +5,7 @@
   grid-column: 2;
   display: flex;
   flex-flow: row nowrap;
-  @include breakpoints(tablet mobile nav) {
+  @include breakpoints(mobile) {
     justify-content: space-between;
   }
 
@@ -35,6 +35,7 @@
         &__link {
           color: $white;
           text-decoration: none;
+          text-shadow: 1px 1px 1px map-get($pallet, color2);
           padding: .5rem;
           display: inline-block;
         }

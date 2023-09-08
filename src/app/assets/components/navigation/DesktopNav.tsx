@@ -2,8 +2,7 @@ import {NavItem} from "@/app/assets/types/navItem";
 import styles from "@/app/assets/styles/modules/desktopNav.module.scss";
 import Link from "next/link";
 import {FunctionComponent} from "react";
-import Image from "next/image";
-import Logo from "../../../../../public/logo.svg";
+import Logo from "@/app/assets/components/Logo";
 
 interface Props {
     navItems: NavItem[],
@@ -14,7 +13,9 @@ const DesktopNav: FunctionComponent<Props> = ({navItems, path}) => {
     return (
         <nav className={styles.nav}>
             <div className={styles.nav__logo}>
-                <Image className={styles.logo__image} src={Logo} alt="Cast Iron Developer"/>
+                <Link href={"/"}>
+                    <Logo logoClass={styles.logo__image}/>
+                </Link>
             </div>
             <div className={styles.nav__inner}>
                 <ul className={styles.nav__inner__list}>

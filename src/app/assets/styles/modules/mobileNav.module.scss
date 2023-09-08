@@ -5,7 +5,7 @@
   grid-column: 2;
   display: flex;
   flex-flow: row nowrap;
-  @include breakpoints(tablet mobile nav) {
+  @include breakpoints(mobile) {
     justify-content: space-between;
 
     &__logo {
@@ -24,6 +24,7 @@
         &__btn {
           position: absolute;
           top: -100px;
+
           &:focus ~ .hamburger_icon {
             .hamburger_icon_line {
               &::before {
@@ -74,7 +75,7 @@
           }
         }
 
-        @include breakpoints(tablet nav mobile) {
+        @include breakpoints(mobile) {
 
           &__icon {
             display: block;
@@ -174,43 +175,39 @@
 
 @keyframes pulse {
   from {
-    box-shadow: 0 0 0 0px rgba(255,255, 255, 0.6);
-    background: rgba(255,255, 255, 0.6);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
   }
   to {
     box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
-    background: rgba(255,255, 255, 0);
+    background: rgba(255, 255, 255, 0);
   }
 }
 
 @keyframes openTop {
   0% {
-    transform: translateY(-5px)
-    rotate(0deg);
+    transform: translateY(-5px) rotate(0deg);
   }
   50% {
-    transform: translateY(0px)
-    rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   100% {
-    transform: translateY(0px)
-    rotate(90deg);
+    transform: translateY(0px) rotate(90deg);
   }
 }
+
 @keyframes closedTop {
   0% {
-    transform: translateY(-5px)
-    rotate(0deg);
+    transform: translateY(-5px) rotate(0deg);
   }
   50% {
-    transform: translateY(0px)
-    rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   100% {
-    transform: translateY(0px)
-    rotate(90deg);
+    transform: translateY(0px) rotate(90deg);
   }
 }
+
 @keyframes openMid {
   50% {
     transform: rotate(0deg);
@@ -219,6 +216,7 @@
     transform: rotate(45deg);
   }
 }
+
 @keyframes closedMid {
   50% {
     transform: rotate(0deg);
@@ -230,29 +228,24 @@
 
 @keyframes openBtm {
   0% {
-    transform: translateY(5px)
-    rotate(0deg);
+    transform: translateY(5px) rotate(0deg);
   }
   50% {
-    transform: translateY(0px)
-    rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   100% {
-    transform: translateY(0px)
-    rotate(90deg);
+    transform: translateY(0px) rotate(90deg);
   }
 }
+
 @keyframes closedBtm {
   0% {
-    transform: translateY(5px)
-    rotate(0deg);
+    transform: translateY(5px) rotate(0deg);
   }
   50% {
-    transform: translateY(0px)
-    rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   100% {
-    transform: translateY(0px)
-    rotate(90deg);
+    transform: translateY(0px) rotate(90deg);
   }
 }

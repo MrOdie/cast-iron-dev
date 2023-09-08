@@ -14,15 +14,19 @@
 %h3 {
   font-size: 1.38316rem;
 }
+
 %h4 {
   font-size: 1rem;
 }
+
 %h5 {
   font-size: 0.85028rem;
 }
+
 %h6 {
   font-size: 0.78405rem;
 }
+
 %p {
   font: 112.5%/1.45em;
 }
@@ -31,22 +35,27 @@
 h1 {
   @extend %h1;
 }
+
 .h2,
 h2 {
   @extend %h2;
 }
+
 .h3,
 h3 {
   @extend %h3;
 }
+
 .h4,
 h4 {
   @extend %h4;
 }
+
 .h5,
 h5 {
   @extend %h5;
 }
+
 .h6,
 h6 {
   @extend %h6;
@@ -116,7 +125,7 @@ main {
     }
 
     &.double {
-      @include breakpoints(really_big large desktop sm_desktop lg_tablet) {
+      @include breakpoints(desktop) {
         column-count: 2;
         column-gap: 2rem;
       }
@@ -136,7 +145,7 @@ main {
   display: none;
 }
 
-@include breakpoints(large desktop sm_desktop lg_tablet) {
+@include breakpoints(desktop) {
   .hidden-desktop {
     display: none;
   }
@@ -152,6 +161,7 @@ main {
     color: lighten(map-get($pallet, "color5"), 15%);
   }
 }
+
 .phoneLink {
   text-decoration: none;
   color: map-get($pallet, "color5");

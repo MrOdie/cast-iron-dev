@@ -6,12 +6,12 @@
   padding: 1rem;
   display: grid;
 
-  @include breakpoints(tablet mobile nav) {
+  @include breakpoints(mobile) {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: minmax(33.5px, 0);
   }
 
-  @include breakpoints(lg_tablet sm_desktop desktop large really_big) {
+  @include breakpoints(desktop) {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: minmax(35.5px, 0);
   }

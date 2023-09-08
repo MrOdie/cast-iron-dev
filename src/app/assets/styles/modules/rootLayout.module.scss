@@ -1,0 +1,9 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.root {
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
