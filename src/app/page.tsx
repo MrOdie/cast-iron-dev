@@ -9,7 +9,7 @@ const About = () => {
             <article className={styles.article}>
                 <h2>Professional Background</h2>
                 <p className="h3">College</p>
-                <p>In 2014 I graduated with a Bachelor of Art's in Philosophy.</p>
+                <p>In 2014 I graduated with a Bachelor of Art&#39;s in Philosophy.</p>
                 <p>I then began to teach Religion at a Catholic School in Montgomery, Al.</p>
                 <p>After just 3 years of teaching and a few conversations with my wife, I was inspired to make a career
                     change.</p>

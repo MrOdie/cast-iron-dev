@@ -25,7 +25,7 @@ const Navbar = () => {
         if (startingWidth !== width) {
             setStartingWidth(width as number);
         }
-    });
+    }, [currentPathname, startingWidth, width]);
 
     return (
         <Fragment>

@@ -11,7 +11,7 @@ const ProjectsList = () => {
         <Fragment>
             {projects.map(project => {
                 return (
-                    <article className={style.article}>
+                    <article key={project.id} className={style.article}>
                         <p className="h3 margin-top-0">{project.name} Name Placeholder</p>
                         <Image className={style.image} src={project.image} alt={`${project.name}-${project.link}`}
                                width={320}
