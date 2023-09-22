@@ -1,0 +1,36 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.article {
+  background-color: map-get($pallet, color5);
+  border-radius: 2%;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  color: $alt-white;
+  text-shadow: 1px 1px 0px $text;
+  display: block;
+  max-width: 375px;
+
+  .image {
+    box-shadow: 11px 11px 0px -5px $white;
+    border: 5px solid $text;
+    display: block;
+  }
+
+  .repoButton {
+    color: $alt-white;
+    padding: .5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: 5px solid $alt-white;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    transition: .15s ease-in-out;
+
+    &:hover, &:focus, &:active {
+      color: map-get($pallet, color5);
+      background-color: $alt-white;
+      text-shadow: none;
+    }
+  }
+}

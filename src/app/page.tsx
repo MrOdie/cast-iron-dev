@@ -36,15 +36,15 @@ const About = () => {
             <article className={styles.article}>
                 <p className="h3">The Beginnings</p>
                 <ul>
-                    <li><p><strong>2018 &mdash; 2019</strong> DealerOn &mdash; Jr. Web Designer</p></li>
+                    <li><p><strong>2018 &mdash; 2019:</strong> DealerOn &mdash; Jr. Web Designer</p></li>
                     <li>
-                        <p><strong>2019 &mdash; 2020</strong> SAIC &mdash; Web Developer</p>
+                        <p><strong>2019 &mdash; 2020:</strong> SAIC &mdash; Web Developer</p>
                     </li>
                     <li>
-                        <p><strong>2020 &mdash; 2022</strong> Booz Allen Hamilton &mdash; Software Developer</p>
+                        <p><strong>2020 &mdash; 2022:</strong> Booz Allen Hamilton &mdash; Software Developer</p>
                     </li>
                     <li>
-                        <p><strong>2022 &mdash; present</strong> Brightspot &mdash; Senior Software
+                        <p><strong>2022 &mdash; present:</strong> Brightspot &mdash; Senior Software
                             Engineer</p>
                     </li>
                 </ul>

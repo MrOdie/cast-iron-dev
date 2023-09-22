@@ -1,11 +1,11 @@
-import {NavItem} from "@/app/assets/types/navItem";
+import {Nav} from "@/app/assets/types/navigation/nav";
 import styles from "@/app/assets/styles/modules/desktopNav.module.scss";
 import Link from "next/link";
 import {FunctionComponent} from "react";
 import Logo from "@/app/assets/components/Logo";
 
 interface Props {
-    navItems: NavItem[],
+    navItems: Nav[],
     path: string
 }
 

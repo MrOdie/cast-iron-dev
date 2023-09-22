@@ -1,0 +1,9 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.projectsPage {
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

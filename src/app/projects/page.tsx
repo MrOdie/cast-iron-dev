@@ -1,7 +1,12 @@
-const Projects = () => {
+import ProjectsList from "@/app/assets/components/ProjectsList";
+import style from "@/app/assets/styles/modules/projectPage.module.scss";
+
+const ProjectsPage = () => {
     return (
-        <h1>Projects Homepage</h1>
+        <section className={style.projectsPage}>
+            <ProjectsList/>
+        </section>
     )
 }
 
-export default Projects;
+export default ProjectsPage;

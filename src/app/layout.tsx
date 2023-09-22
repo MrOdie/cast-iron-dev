@@ -18,9 +18,9 @@ export default function RootLayout({
         <html lang="en">
         <body className={`margin-none ${font.className}`}>
         <Navbar></Navbar>
-        <section className={styles.root__section}>
+        <div className={styles.root__section}>
             {children}
-        </section>
+        </div>
         <Footer></Footer>
         </body>
         </html>

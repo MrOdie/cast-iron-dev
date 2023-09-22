@@ -1,4 +1,4 @@
-export class NavItem {
+export class Nav {
 
     id: number;
     name: string;
