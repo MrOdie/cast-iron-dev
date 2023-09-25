@@ -11,49 +11,51 @@ interface Props {
 
 const MobileNav: FunctionComponent<Props> = ({navItems, path}) => {
 
-    const [isChecked, setIsChecked] = useState(false);
+    const [open, setOpen] = useState(false);
+    const navChange = (e: any) => {
+        if (open) {
+            setOpen(!open);
+        }
+    }
     return (
         <nav className={styles.nav}>
-            <div className={styles.nav__logo}>
-                <Link href={"/"}>
-                    <Logo logoClass={styles.logo__image}/>
+            <div className={styles.logo}>
+                <Link href={"/"} onClick={e => navChange(e)}>
+                    <Logo logoClass={styles.image}/>
                 </Link>
             </div>
-            <div className={styles.nav__inner}>
-                <input
-                    type="checkbox"
-                    title="menu"
-                    id="hamburger"
-                    className={styles.hamburger__btn}
-                    onClick={() => {
-                        setIsChecked(!isChecked)
-                    }}
-                />
-                <label htmlFor="hamburger" className={`${styles.hamburger__icon} hidden-desktop`}>
-                    <p className="hidden">Menu Button</p>
-                    <span className={`${styles.hamburger__icon__line} hidden-desktop`}></span>
-                </label>
+            <input
+                type="checkbox"
+                title="menu"
+                id="hamburger"
+                className={styles.menu}
+                checked={open}
+                onChange={() => setOpen(!open)}
+            />
+            <label htmlFor="hamburger" className={styles.label}>
+                <p className="hidden">Menu Button</p>
+                <span className={styles.lines}></span>
+            </label>
 
-                <div className={!isChecked ? `${styles.nav__links}` : `${styles.nav__links} ${styles.nav__checked}`}>
+            <div className={styles.linksContainer}>
 
-                    <ul className={styles.nav__links__list}>
-                        {
-                            navItems.map((item) => {
-                                const isCurrent = path === item.href;
-                                return (
-                                    <li className={styles.nav__links__list__link} key={item.id}>
-                                        <Link
-                                            className={
-                                                isCurrent ?
-                                                    `${styles.nav__links__list__link__item} ${styles.nav__links__list__link__current}` :
-                                                    `${styles.nav__links__list__link__item}`}
-                                            href={item.href}>{item.name}</Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
+                <ul className={styles.linksList}>
+                    {
+                        navItems.map((item) => {
+                            const isCurrent = path === item.href;
+                            return (
+                                <li className={styles.link} onClick={e => navChange(e)} key={item.id}>
+                                    <Link
+                                        className={
+                                            !isCurrent ?
+                                                `${styles.linkItem}` :
+                                                `${styles.linkItemCurrent}`}
+                                        href={item.href}>{item.name}</Link>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
         </nav>
 
