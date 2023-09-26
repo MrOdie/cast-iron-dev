@@ -5,9 +5,8 @@
   &__section {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    padding: 2.5rem 0;
     background-color: $white;
-    margin-bottom: 150px;
-    box-shadow: -19px 2px 17px $text;
+    margin-bottom: 148px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.12);
   }
 }

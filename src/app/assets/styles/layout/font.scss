@@ -145,6 +145,18 @@ main {
   display: none;
 }
 
+@include breakpoints(rs) {
+  .hidden-rs {
+    display: none !important;
+  }
+}
+
+@include breakpoints(mobile) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 @include breakpoints(desktop) {
   .hidden-desktop {
     display: none;

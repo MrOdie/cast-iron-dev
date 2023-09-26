@@ -12,11 +12,13 @@ const ProjectsList = () => {
             {projects.map(project => {
                 return (
                     <article key={project.id} className={style.article}>
-                        <p className="h3 margin-top-0">{project.name} Name Placeholder</p>
-                        <Image className={style.image} src={project.image} alt={`${project.name}-${project.link}`}
+                        <p className="h3 margin-vert-0">{project.name} Name Placeholder</p>
+                        <Image className={`${style.image} hidden-rs`} src={project.image}
+                               alt={`${project.name}-${project.link}`}
                                width={320}
                                height={213.5} priority/>
-                        <a type="button" className={style.repoButton} href={project.link}>View Repository</a>
+                        <a type="button" className={style.repoButton} href={project.link}><span
+                            className="hidden-rs">View </span>Repository</a>
                     </article>
                 )
             })}

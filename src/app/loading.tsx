@@ -1,6 +1,6 @@
 const Loading = () => {
     return (
-        "har har har"
+        <main>fart</main>
     )
 }
 

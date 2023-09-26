@@ -2,7 +2,6 @@
 @use '../layout/breakpoints' as *;
 
 .nav {
-  grid-column: 2;
   display: flex;
   flex-flow: row nowrap;
   @include breakpoints(mobile) {
@@ -38,11 +37,13 @@
           text-shadow: 1px 1px 1px map-get($pallet, color2);
           padding: .5rem;
           display: inline-block;
+          text-transform: uppercase;
         }
       }
 
       &__current {
-        background-color: map-get($pallet, color4);
+        background-color: map-get($pallet, color3);
+        text-transform: uppercase;
       }
     }
   }

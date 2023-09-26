@@ -16,4 +16,12 @@
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: minmax(35.5px, 0);
   }
+
+  .mobile {
+    grid-column: 2;
+  }
+
+  .desktop {
+    grid-column: 2/3;
+  }
 }

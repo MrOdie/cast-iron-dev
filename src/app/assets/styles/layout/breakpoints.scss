@@ -8,22 +8,18 @@
 
 @mixin do-breakpoint($point) {
   @if $point == s {
-    //480 and below
     @media (max-width: 480px) {
       @content;
     }
   } @else if $point == m {
-    // 481 - 992
     @media (min-width: 480px + 1) and (max-width: 992px) {
       @content;
     }
   } @else if $point == l {
-    // 993 - 1600
     @media (min-width: 992px + 1) and (max-width: 1600px) {
       @content;
     }
   } @else if $point == xl {
-    // 1601 and above
     @media (min-width: 1600px + 1) {
       @content;
     }
@@ -34,6 +30,10 @@
   } @else if $point == desktop {
     @media (min-width: 769px) {
       @content;
+    }
+  } @else if $point == rs {
+    @media (max-width: 420px) {
+      @content
     }
   }
 }
