@@ -1,0 +1,27 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.section {
+  background-color: map-get($pallet, color2);
+  padding: 1rem;
+  display: grid;
+  position: relative;
+
+  @include breakpoints(mobile) {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: minmax(33.5px, 0);
+  }
+
+  @include breakpoints(desktop massive) {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: minmax(35.5px, 0);
+  }
+
+  .mobile {
+    grid-column: 2;
+  }
+
+  .desktop {
+    grid-column: 2/3;
+  }
+}

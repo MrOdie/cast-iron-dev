@@ -1,0 +1,7 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.main {
+  grid-column: 1/4;
+  background-color: map-get($pallet, color3);
+}

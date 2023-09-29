@@ -1,0 +1,7 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.home {
+  padding: 2.5rem 0;
+  grid-column: 2 / 3;
+}
