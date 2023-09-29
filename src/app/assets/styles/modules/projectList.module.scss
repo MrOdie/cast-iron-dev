@@ -36,7 +36,6 @@
 
     &:hover, &:focus, &:active {
       color: map-get($pallet, color2);
-      border-color: map-get($pallet, color2);
       background-color: $alt-white;
       text-shadow: none;
     }

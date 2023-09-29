@@ -125,7 +125,7 @@ main {
     }
 
     &.double {
-      @include breakpoints(desktop) {
+      @include breakpoints(desktop massive) {
         column-count: 2;
         column-gap: 2rem;
       }
@@ -157,7 +157,7 @@ main {
   }
 }
 
-@include breakpoints(desktop) {
+@include breakpoints(desktop massive) {
   .hidden-desktop {
     display: none;
   }

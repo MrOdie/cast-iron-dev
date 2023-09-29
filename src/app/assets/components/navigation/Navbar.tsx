@@ -21,14 +21,14 @@ const Navbar = () => {
 
     return (
         <Fragment>
-            <section className={styles.section}>
-                <header className={`${styles.mobile} hidden-mobile`}>
+            <header className={styles.section}>
+                <div className={`${styles.mobile} hidden-mobile`}>
                     <DesktopNav navItems={nav} path={pathName}/>
-                </header>
-                <header className={`${styles.desktop} hidden-desktop`}>
+                </div>
+                <div className={`${styles.desktop} hidden-desktop`}>
                     <MobileNav navItems={nav} path={pathName}/>
-                </header>
-            </section>
+                </div>
+            </header>
         </Fragment>
     )
 }

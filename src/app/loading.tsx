@@ -1,6 +1,6 @@
 const Loading = () => {
     return (
-        <main>fart</main>
+        <main>LOADING</main>
     )
 }
 
