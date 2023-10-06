@@ -3,9 +3,13 @@ import Navbar from "@/app/assets/components/navigation/Navbar";
 import Footer from "@/app/assets/components/Footer";
 import {font} from "./font";
 import styles from "@/app/assets/styles/modules/rootLayout.module.scss";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import {config} from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 export const metadata = {
-    title: 'About | Cast Iron Dev',
+    title: 'Home | Cast Iron Dev',
     description: 'Built by MrOhdee',
 }
 

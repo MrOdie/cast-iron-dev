@@ -1,6 +1,8 @@
+import SkeletonPage from "@/app/assets/components/SkeletonPage";
+
 const Loading = () => {
     return (
-        <main>LOADING</main>
+        <SkeletonPage/>
     )
 }
 

@@ -1,0 +1,15 @@
+@use '../layout/colors' as *;
+@use '../layout/breakpoints' as *;
+
+.main {
+  background-color: map-get($pallet, color3);
+  width: 100vw;
+  height: 100vmin;
+  z-index: 10;
+
+  .section {
+    .main {
+      color: $white;
+    }
+  }
+}
