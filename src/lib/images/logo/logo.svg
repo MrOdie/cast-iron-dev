@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="33mm"
+   height="9mm"
+   viewBox="-3 -1 36.666667 10"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="20.2854"
+   inkscape:export-ydpi="20.2854"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="true"
+     inkscape:pageopacity="0.28627451"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.0532917"
+     inkscape:cx="75.492297"
+     inkscape:cy="64.848047"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showborder="true"
+     shape-rendering="auto" />
+  <defs
+     id="defs2">
+    <color-profile
+       name="ACES-CG-Linear--Academy-Color-Encoding-System-AP1-"
+       xlink:href="file:///System/Library/ColorSync/Profiles/ACESCG%20Linear.icc"
+       id="color-profile2635" />
+    <rect
+       x="128.42386"
+       y="294.89923"
+       width="466.13107"
+       height="489.91324"
+       id="rect125" />
+    <rect
+       x="485.1568"
+       y="680.17084"
+       width="66.590149"
+       height="109.3981"
+       id="rect119" />
+    <rect
+       x="137.93674"
+       y="390.02802"
+       width="138.91602"
+       height="47.284599"
+       id="rect113" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-37.29831,-104.38328)"
+       id="text111"
+       style="font-size:32px;white-space:pre;shape-inside:url(#rect113);display:inline;fill:#eee"
+       inkscape:export-filename="logo.svg"
+       inkscape:export-xdpi="20.2854"
+       inkscape:export-ydpi="20.2854"><tspan
+         x="137.9375"
+         y="419.22191"
+         id="tspan2651"><tspan
+           style="font-weight:bold;font-family:Verdana;-inkscape-font-specification:'Verdana, Bold'"
+           id="tspan2649">&lt;Fe/&gt;</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text117"
+       style="white-space:pre;shape-inside:url(#rect119);display:inline;fill:#000000" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text123"
+       style="white-space:pre;shape-inside:url(#rect125);display:inline;fill:#000000" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2"
+     style="fill:#00ff00" />
+</svg>
