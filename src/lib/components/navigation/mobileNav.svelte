@@ -1,26 +1,17 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
 	import { quintOut } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
+	import type { NavItem } from './navigationItems/Navigation';
 
 	// imports
-	export let navItems, activeUrl, isOpen: boolean;
+	export let navItems: NavItem[], activeUrl: string, isOpen: boolean;
 
-	const dispatch = createEventDispatcher();
-	$: dispatch('openHasChanged', isOpen);
-	let navigation;
-
-	const onWindowClick = (e) => {
-		if (navigation && navigation.contains(e.target) === false) {
-			isOpen = false;
-		}
-	};
+	let navigation: HTMLDivElement;
 </script>
 
-<svelte:window on:click={onWindowClick} />
 <div
 	id="navigation"
-	class="basis-2/5 md:hidden max-sm:flex max-sm:items-end max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:bottom-0 z-10 max-sm:bg-primary-700"
+	class="basis-2/5 md:hidden max-sm:flex max-sm:items-end max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:bottom-0 max-sm:bg-charcoal"
 	transition:slide={{ delay: 250, duration: 300, easing: quintOut, axis: 'x' }}
 	bind:this={navigation}
 >
@@ -32,7 +23,7 @@
 					: 'group flex-auto text-center text-lg w-full'}
 			>
 				<a
-					class="hover:bg-secondary-200 px-20 py-3 block text-w group-[.active-tab]:bg-primary-200"
+					class="hover:bg-charcoal-200 px-20 py-3 block text-w group-[.active-tab]:bg-charcoal-200"
 					on:click={() => (isOpen = !isOpen)}
 					{href}>{title}</a
 				>
