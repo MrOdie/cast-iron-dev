@@ -13,3 +13,9 @@
 		<slot />
 	</main>
 </div>
+
+<style>
+	main {
+		height: calc(100vh - 64px);
+	}
+</style>

@@ -40,7 +40,7 @@
 			<label class="cursor-pointer" for="hamburgerMenu" bind:this={hamburgerBtn}>
 				<MenuButton {isOpen} />
 			</label>
-			<input id="hamburgerMenu" type="checkbox" bind:checked={isOpen} />
+			<input id="hamburgerMenu" class="hidden" type="checkbox" bind:checked={isOpen} />
 			<!--			Componentize this eventually-->
 		</div>
 		<DesktopNav {navItems} {activeUrl} />
@@ -50,5 +50,3 @@
 {#if isOpen}
 	<MobileNav {navItems} {activeUrl} {isOpen} />
 {/if}
-
-<h3>Is Open Value: {isOpen}</h3>

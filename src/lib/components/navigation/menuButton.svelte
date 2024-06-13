@@ -13,7 +13,7 @@
 
 <style>
 	svg {
-		min-height: 24px;
+		min-height: 25px;
 		transition: transform 0.3s ease-in-out;
 	}
 
@@ -22,10 +22,6 @@
 		stroke: currentColor;
 		stroke-width: 3;
 		transition: transform 0.3s ease-in-out;
-	}
-
-	.isOpen svg {
-		transform: scale(0.7);
 	}
 
 	/* rotate the top line */

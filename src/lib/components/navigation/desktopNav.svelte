@@ -12,7 +12,7 @@
 					: 'group flex-auto text-center only-md:text-xl lg:text-2xl max-sm:w-full'}
 			>
 				<a
-					class="hover:bg-charcoal-200 py-4 block md:text-w group-[.active-tab]:bg-charcoal-200"
+					class="hover:bg-charcoal-200 p-4 block md:text-w group-[.active-tab]:bg-charcoal-200"
 					{href}>{title}</a
 				>
 			</li>
