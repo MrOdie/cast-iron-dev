@@ -21,7 +21,7 @@
 
 <svelte:window on:click={onWindowClick} />
 
-<header class="bg-charcoal xl:flex relative z-20">
+<header class="bg-quarternary xl:flex relative z-20">
 	<nav
 		class="max-sm:py-2 max-sm:mx-12 md:mx-16 xl:container xl:mx-auto flex justify-between items-center"
 	>

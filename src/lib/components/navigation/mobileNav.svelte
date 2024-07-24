@@ -11,7 +11,7 @@
 
 <div
 	id="navigation"
-	class="basis-2/5 md:hidden max-sm:flex max-sm:items-end max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:bottom-0 max-sm:bg-charcoal"
+	class="basis-2/5 md:hidden max-sm:flex max-sm:items-end max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:bottom-0 max-sm:bg-quarternary"
 	transition:slide={{ delay: 250, duration: 300, easing: quintOut, axis: 'x' }}
 	bind:this={navigation}
 >
@@ -23,7 +23,7 @@
 					: 'group flex-auto text-center text-lg w-full'}
 			>
 				<a
-					class="hover:bg-charcoal-200 px-20 py-3 block text-w group-[.active-tab]:bg-charcoal-200"
+					class="hover:bg-quarternary-200 px-20 py-3 block text-w group-[.active-tab]:bg-quarternary-200"
 					on:click={() => (isOpen = !isOpen)}
 					{href}>{title}</a
 				>

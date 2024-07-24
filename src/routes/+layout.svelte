@@ -14,8 +14,11 @@
 	</main>
 </div>
 
-<style>
+<style lang="scss">
 	main {
+		@include breakpoints(mobile) {
+			display: none;
+		}
 		height: calc(100vh - 64px);
 	}
 </style>

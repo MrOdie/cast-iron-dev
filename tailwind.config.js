@@ -67,7 +67,7 @@ export default {
 				lg: '0 8px 16px #eee'
 			},
 			colors: {
-				black: {
+				primary: {
 					DEFAULT: '#000000',
 					100: '#000000',
 					200: '#000000',
@@ -79,7 +79,7 @@ export default {
 					800: '#999999',
 					900: '#cccccc'
 				},
-				rich_black: {
+				secondary: {
 					DEFAULT: '#0c1821',
 					100: '#020507',
 					200: '#050a0d',
@@ -91,7 +91,7 @@ export default {
 					800: '#77a8ce',
 					900: '#bbd3e6'
 				},
-				oxford_blue: {
+				tertiary: {
 					DEFAULT: '#1b2a41',
 					100: '#05080d',
 					200: '#0b111a',
@@ -103,7 +103,7 @@ export default {
 					800: '#89a5ce',
 					900: '#c4d2e6'
 				},
-				charcoal: {
+				quarternary: {
 					DEFAULT: '#324a5f',
 					100: '#0a0f13',
 					200: '#141d25',
