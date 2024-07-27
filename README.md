@@ -5,3 +5,4 @@
 - Tailwind
 - SCSS
 - [Squoosh](https://squoosh.app/)
+- [Iconify](@iconify/svelte)
