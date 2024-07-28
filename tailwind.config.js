@@ -9,7 +9,7 @@ export default {
 			gridTemplateColumns: {
 				standard: '1fr 8fr 1fr',
 				standard_mobile: '15px 8fr 15px',
-				resume: '1.5fr 5fr 5fr 1.5fr'
+				resume: '5fr 5fr'
 			},
 			screens: {
 				// additional media queries because I like flexibility

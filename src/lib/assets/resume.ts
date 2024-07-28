@@ -10,7 +10,13 @@ const resume: Job[] = [
 		endDate: 'January 2019',
 		description:
 			'Design and develop mock-ups for custom homepages and various other pages.Served as a mentor to newer Web Designers and helped to track growth and areas for improvement. Co-managed the internal ticket queue to assign out work as it came in or push back when requirements were unclear.',
-		technologyUsed: ['html', 'css', 'bootstrap', 'javascript', 'jquery']
+		technologyUsed: [
+			'devicon:html5',
+			'devicon:css3',
+			'devicon:bootstrap',
+			'skill-icons:javascript',
+			'devicon:jquery'
+		]
 	},
 	{
 		id: 1,
@@ -22,17 +28,17 @@ const resume: Job[] = [
 		description:
 			"Contributed to the development of internal APIs that would serve critical data to the Akamai Firewall for external ingestion that would feed CORE3. Built the official Medal of Honor websites for two recipients (Bellavia & Williams). Overhauled STAND-TO!, the official site for relaying OCPA's strategic communications objectives. Performed various other updates to varying degrees of complexity for a variety of other microsites that are hosted alongside Army.mil.",
 		technologyUsed: [
-			'html',
-			'scss',
-			'javascript',
-			'typescript',
-			'jquery',
-			'angular',
-			'php',
-			'laravel',
-			'jekyll',
-			'docker',
-			'aws'
+			'devicon:html5',
+			'devicon:scss',
+			'skill-icons:javascript',
+			'devicon:jquery',
+			'devicon:jekyll',
+			'skill-icons:typescript',
+			'skill-icons:angular-dark',
+			'skill-icons:php-dark',
+			'devicon:laravel',
+			'devicon:docker',
+			'skill-icons:aws-dark'
 		]
 	},
 	{
@@ -45,21 +51,41 @@ const resume: Job[] = [
 		description:
 			"Served as a 'T' shaped developer, providing support to both the Front-End and Back-End as the team built out the next iteration of Dibnet. Built a massive, multi-step form that was used to triage real time Cyber Incidents as they are happening and contributed to the API development that would support this feature. Spearheaded the planning, design, development, and testing of NASA's Rideshare Portal while also interfacing with the client to gather requirements and ensure that key targets were met.",
 		technologyUsed: [
-			'html',
-			'css',
-			'scss',
-			'javascript',
-			'typescript',
-			'angular',
-			'java',
-			'springboot',
-			'postgres',
-			'docker',
-			'aws'
+			'devicon:html5',
+			'devicon:css3',
+			'devicon:scss',
+			'skill-icons:javascript',
+			'skill-icons:typescript',
+			'skill-icons:angular-dark',
+			'devicon:java',
+			'simple-icons:springboot',
+			'skill-icons:postgresql-dark',
+			'devicon:docker',
+			'skill-icons:aws-dark'
 		]
 	},
 	{
 		id: 3,
+		company: 'Freelance',
+		companyId: 'freelance',
+		role: 'Software Engineer',
+		startDate: 'July 2018',
+		endDate: null,
+		description:
+			'Built and hosted several sites for clients over the years. Ranging from simple static sites with HTML and CSS, to leveraging Frameworks such as Sveltekit and NextJS.',
+		technologyUsed: [
+			'devicon:html5',
+			'devicon:scss',
+			'devicon:javascript',
+			'skill-icons:typescript',
+			'devicon:nextjs',
+			'devicon:svelte',
+			'skill-icons:php-dark',
+			'skill-icons:aws-dark'
+		]
+	},
+	{
+		id: 4,
 		company: 'Brightspot',
 		companyId: 'brightspot',
 		role: 'Senior Software Engineer',
@@ -68,18 +94,18 @@ const resume: Job[] = [
 		description:
 			'Overhauled Front End User Authentication for Google REWS, switching between internal Google tools to provide authentication that is only stored in Session data, instead of in the DB. Refactored and granularized the Notification system for Google Mission Control, to allow users to specify on a multitude of levels the types of notifications they would receive, and the depth of information provided therein. Served as the Front-End Subject Matter Expert for Google Mission Control and provided expert insight into feasibility of requests and delivery of desired features. Provided 24/7 support across the Brightspot organization where I was able to provide prompt support to users on an international scale when responding to outages, assisting with production deployments, or ensuring site stability when system redundancy was unstable.',
 		technologyUsed: [
-			'html',
-			'handlebars',
-			'css',
-			'less',
-			'javascript',
-			'jquery',
-			'java',
-			'sql',
-			'gcp',
-			'aws',
-			'docker',
-			'kubernetes'
+			'devicon:html5',
+			'devicon:handlebars',
+			'devicon:css3',
+			'devicon-plain:less-wordmark',
+			'skill-icons:javascript',
+			'devicon:jquery',
+			'devicon:java',
+			'skill-icons:mysql-dark',
+			'devicon:docker',
+			'devicon:kubernetes',
+			'skill-icons:gcp-dark',
+			'skill-icons:aws-dark'
 		]
 	}
 ];
